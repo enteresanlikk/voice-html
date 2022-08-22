@@ -1,0 +1,61 @@
+@import url('show-center.css');
+@import url('button.css');
+@import url('header.css');
+
+:root {
+    --background-color: #161616;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 2px;
+    background-color: var(--background-color);
+}
+
+* {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.white {
+    color: var(--white-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-xs {
+    font-size: 0.55em;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-d-c {
+    flex-direction: column;
+}
+
+.main--texts--title {
+    font-size: 1.7em;
+}
+
+@media (max-width:481px)  {
+    .main--texts--title {
+        font-size: 1em;
+    }
+    
+    .main--texts--description {
+        font-size: 0.8em;
+    }
+}
